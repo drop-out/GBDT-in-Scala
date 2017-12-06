@@ -1,7 +1,7 @@
 # GBDT in Scala
 As one would expect, this is a `Scala` implementation of GBDT. 
 
-I have implemented GBDT in `Python`, see [MachineLearningFromScratch](https://github.com/drop-out/MachineLearningFromScratch). And now I rewrite it to `Scala`. The structure of the code is almost the same as the `Python` implementation.
+I have implemented GBDT in `Python`, see [Machine-Learning-From-Scratch](https://github.com/drop-out/Machine-Learning-From-Scratch). And now I rewrite it to `Scala`. The structure of the code is almost the same as the `Python` implementation.
 
 This implementation supports most of the core features of `xgboost`. Briefly, it supports:
 
@@ -23,7 +23,7 @@ The project is build with `Maven`. So you can find the information about the dep
 
 ## Comparison with Python implementation
 
-As for peformance, Scala implementation is faster than [Python implementation with Numpy](https://github.com/drop-out/MachineLearningFromScratch/blob/master/gbdt.py), tested on my machine. But it could not compare to the [Python implementation with Numba](https://github.com/drop-out/MachineLearningFromScratch/blob/master/gbdt_numba.py). I have to say that `Numba` is really fast.
+As for peformance, Scala implementation is faster than [Python implementation with Numpy](https://github.com/drop-out/Machine-Learning-From-Scratch/blob/master/gbdt.py), tested on my machine. But it could not compare to the [Python implementation with Numba](https://github.com/drop-out/Machine-Learning-From-Scratch/blob/master/gbdt_numba.py). I have to say that `Numba` is really fast.
 
 In terms of implementation, two remarks are in order. First, parallelization could be easily implemented in `Scala` with `parallel collection`, which makes the implementation process quite lovely. Second, I have to say that `Breeze` is not as mature as `Numpy`. It takes a lot of time to make `Breeze` code work.
 
