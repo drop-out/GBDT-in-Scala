@@ -36,7 +36,7 @@ Refer to `example.scala` for usage.
 var model = new GBDT(loss="mse",max_depth=3,min_sample_split=10,lambda=1.0,gamma=0.0,learning_rate=0.1,n_estimators=100)
 ```
 * `loss`: Loss function for gradient boosting. `'mse'`  is mean squared error for regression task and `'log'` is log loss for classification task. 
-* `loss_object`: Pass an object that extends the `loss` trait to use customized loss. See [source code](https://github.com/drop-out/GBDTinScala/blob/master/src/main/scala/Tree.scala) for details.
+* `loss_object`: Pass an object that extends the `loss` trait to use customized loss. See [source code](https://github.com/drop-out/GBDT-in-Scala/blob/master/src/main/scala/Tree.scala) for details.
 * `max_depth`: The maximum depth of a tree.
 * `min_sample_split`: The minimum number of samples required to further split a node.
 * `lambda`: The regularization coefficient for leaf score, also known as lambda.
@@ -62,7 +62,7 @@ Returns predictions as `DenseVector`.
 
 **Customized loss**
 
-Define a object that inheritates the `loss` trait (see [source code](https://github.com/drop-out/GBDTinScala/blob/master/src/main/scala/Tree.scala)), which specifies the activation function, the gradients and the hessian. 
+Define a object that inheritates the `loss` trait (see [source code](https://github.com/drop-out/GBDT-in-Scala/blob/master/src/main/scala/Tree.scala)), which specifies the activation function, the gradients and the hessian. 
 
 For example:
 
